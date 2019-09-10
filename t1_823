@@ -1,0 +1,9 @@
+import pygame as py
+from pygame.locals import *
+
+py.init()
+b='sushiplate.jpg'
+screen=py.display.set_mode((640,480),0,32)
+background=py.image.load(b).convert()
+screen.blit((background),(0,0))
+py.display.update()
